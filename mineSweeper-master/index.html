@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mine Sweeper</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Luckiest+Guy&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="bg"></div>
+
+	<h1 class="title">MINE SWEEPER</h1>
+
+	<main>
+		<div class="head">
+			<div class="mineRemain leftRight">10</div>
+			<div class="face"><img src="img/smile.png" alt=""></div>
+			<div class="clock leftRight" id="clock">0</div>
+		</div>
+		<div class="gridWrap">
+			<div number="1" class="grid grid1">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="2" class="grid grid2">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="3" class="grid grid3">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="4" class="grid grid4">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="5" class="grid grid5">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="6" class="grid grid6">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="7" class="grid grid7">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="8" class="grid grid8">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="9" class="grid grid9">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="10" class="grid grid10">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="11" class="grid grid11">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="12" class="grid grid12">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="13" class="grid grid13">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="14" class="grid grid14">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="15" class="grid grid15">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="16" class="grid grid16">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="17" class="grid grid17">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="18" class="grid grid18">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="19" class="grid grid19">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="20" class="grid grid20">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="21" class="grid grid21">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="22" class="grid grid22">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="23" class="grid grid23">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="24" class="grid grid24">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="25" class="grid grid25">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="26" class="grid grid26">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="27" class="grid grid27">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="28" class="grid grid28">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="29" class="grid grid29">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="30" class="grid grid30">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="31" class="grid grid31">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="32" class="grid grid32">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="33" class="grid grid33">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="34" class="grid grid34">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="35" class="grid grid35">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="36" class="grid grid36">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="37" class="grid grid37">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="38" class="grid grid38">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="39" class="grid grid39">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="40" class="grid grid40">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="41" class="grid grid41">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="42" class="grid grid42">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="43" class="grid grid43">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="44" class="grid grid44">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="45" class="grid grid45">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="46" class="grid grid46">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="47" class="grid grid47">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="48" class="grid grid48">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="49" class="grid grid49">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="50" class="grid grid50">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="51" class="grid grid51">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="52" class="grid grid52">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="53" class="grid grid53">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="54" class="grid grid54">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="55" class="grid grid55">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="56" class="grid grid56">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="57" class="grid grid57">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="58" class="grid grid58">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="59" class="grid grid59">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="60" class="grid grid60">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="61" class="grid grid61">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="62" class="grid grid62">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="63" class="grid grid63">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="64" class="grid grid64">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="65" class="grid grid65">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="66" class="grid grid66">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="67" class="grid grid67">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="68" class="grid grid68">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="69" class="grid grid69">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="70" class="grid grid70">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="71" class="grid grid71">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="72" class="grid grid72">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="73" class="grid grid73">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="74" class="grid grid74">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="75" class="grid grid75">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="76" class="grid grid76">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="77" class="grid grid77">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="78" class="grid grid78">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="79" class="grid grid79">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="80" class="grid grid80">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+			<div number="81" class="grid grid81">
+				<div class="gridInner"></div>
+				<img src="" alt="" class="forMine"><img src="" alt="" class="forFlag">
+				<div class="countNum"></div>
+			</div>
+		</div>
+
+	</main>
+
+	<aside>
+		<h2>Rules of the Game</h2>
+		<p>1. Click to open each block，if there is a bomb，game failed.</p>
+		<p>2. If there is a number on the block，it represents how many mines there are in the surrounding eight blocks.</p>
+		<p>3. To mark a mine that you think there is in a block，press shift+click.</p>
+		<p>4. If mines around a number have all been marked，double click the number to open the remaining blocks.</p>
+		<p>5. When your marks match all mines, you win.</p>
+		<p>6. Click face to restart.</p>
+	</aside>
+
+	<audio src="audio/pop.mp3" class="popSound"></audio>
+	<audio src="audio/click.mp3" class="clickSound"></audio>
+	<audio src="audio/StartUp.mp3" class="start"></audio>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

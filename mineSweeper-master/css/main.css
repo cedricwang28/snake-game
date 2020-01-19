@@ -1,0 +1,161 @@
+*{
+	margin:0;
+	padding: 0;
+	user-select: none;
+}
+
+.bg{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-image: url(../img/background.jpg);
+	background-size:contain;
+	opacity: 0.6;
+}
+
+.title{
+	text-align: center;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: 1600;
+	font-size: 8vh;
+	color: white;
+}
+
+main{
+	margin: 0 auto;
+	margin-top: 0px;
+	border:2px grey solid;
+	width: 300px;
+	height: auto;
+	padding: 10px;
+	overflow: hidden;
+	background-color: lightgray;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+	
+	
+}
+.head{
+	height: 80px;
+	border-left: 4px dimgray solid;
+	border-top: 4px dimgray solid;
+	border-right: 4px white solid;
+	border-bottom: 4px white solid;
+
+}
+.gridWrap{
+	border:2px grey solid;
+	margin-top: 10px;
+	box-sizing: content-box;
+	border-left: 6px gray solid;
+	border-top: 6px gray solid;
+	border-right: 6px white solid;
+	border-bottom: 6px white solid;
+	overflow: hidden;
+}
+.grid{
+	width: 30px;
+	height: 30px;
+	border: 1px darkgray solid;
+	float: left;
+	position: relative;
+}
+.gridInner{
+	background-color:lightgray;
+	box-sizing: border-box;
+	border-left: 3px white solid;
+	border-top: 3px white solid;
+	border-right: 3px gray solid;
+	border-bottom: 3px gray solid;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.grid img{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+}
+.grid .countNum{
+	z-index: 1;
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+	background-color:lightgray;
+	border: 1px lightgray solid;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.head{
+	display: flex;
+	justify-content: space-around;
+	padding: 12px;
+	/* padding-top: 6px; */
+	box-sizing: border-box;
+}
+.leftRight{
+	width: 80px;
+	height: 50px;
+	background-color: black;
+}
+.face{
+	width: 36px;
+	height: 36px;
+	background-color: #fff;
+	margin-top: 6px;
+
+}
+.face img{
+	width: 100%;
+	height: 100%;
+}
+.mineRemain{
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 50px;
+}
+.clock{
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+}
+aside{
+	width: 300px;
+	height: auto;
+	font-family: 'Courgette', cursive;
+	position: absolute;
+	left: 7%;
+	top: 23%;
+	background-color: rgba(33,33,33,0.6);
+	padding: 5px 8px;
+	border-radius: 10px;
+	color:white;
+	z-index: -1;
+	
+}
+h2{
+	text-align: center;
+	margin-bottom:20px;
+
+}
